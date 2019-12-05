@@ -1,4 +1,4 @@
-FROM golang:latset
+FROM golang:latest
 
 WORKDIR /heroku
 
