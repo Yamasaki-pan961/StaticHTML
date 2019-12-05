@@ -14,6 +14,8 @@ func main(){
 
 	router.GET("/",func(c *gin.Context){
 		c.HTML(http.StatusOK,"index.html", gin.H{})
-	})
+	})	
+	fmt.Printf("サーバー動きました")
 	router.Run(":" + os.Getenv("PORT"))
+
 }
